@@ -1,0 +1,312 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    border-top: 6px solid #2A7AE4;
+    background: linear-gradient(#013d8b, #5fa2fa);
+    padding: 20px 0;
+}
+
+/*.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.box h1 {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    transition: 1s all;
+    text-align: left;
+    top: 50%;
+    margin-top: 40px;
+}
+
+.box h2 {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    transition: 1s all;
+    text-align: left;
+    top: 52%;
+    margin: 5px 0 40px 0;
+}*/
+
+.menu {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 258px;
+    padding: 0 1.5rem;
+    white-space: nowrap;
+}
+
+/*nav a {
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 400ms all;
+}*/
+
+.header-itens {
+    text-decoration: none;
+    padding: 10px 0 0 0;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s;
+    color: white;
+}
+
+.header-itens:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,0.5)
+}
+
+/* Main */
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal img {
+    width: 300px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 3%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0 1em;
+}
+
+.principal p {
+    text-align: justify;
+}
+
+.listas {
+    padding: 5em 0;
+    background: #FEFEFE;
+    width: 940px;
+	margin: 0 auto;
+}
+
+.formacoes-img {
+    width: 100px;
+    float: left;
+    margin: 0 0 20px 280px;
+    position: absolute;
+}
+
+.habilidades-img {
+    width: 50px;
+    float: left;
+    margin: 10px 0 20px 310px;
+    position: absolute;
+}
+
+.conteudo-listas{
+    width: 640px;
+    margin: 50px 0 0 100px;
+}
+
+.lista{
+    width: 110%;
+    display: inline-block;
+}
+
+.itens-listas {
+    text-align: center;
+    line-height: 2;
+    transition: 1s all;
+}
+
+.itens-listas a {
+    color: inherit;
+}
+
+.itens-listas:first-child {
+    font-weight: bold;
+}
+
+.itens-listas:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #2A7AE4;;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: linear-gradient(#5fa2fa, #002351);
+    padding: 20px 0;
+    border-bottom: 6px solid #2A7AE4;
+}
+
+footer img {
+    width: 20px;
+    margin: 30px 20px 20px 10px;
+    display: inline-block;
+    transition: 500ms all;
+}
+
+footer img:hover {
+    transform: scale(2) rotate(360deg);
+    cursor: pointer;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+    margin: 10px 0 0; 
+}
+
+.contato {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+/* Lista de Habilidades */
+
+.uma-estrela:after {
+    content: " ★✰✰✰✰";
+}
+
+.duas-estrelas:after {
+    content: " ★★✰✰✰";
+}
+
+.tres-estrelas:after {
+    content: " ★★★✰✰"; 
+}
+
+.quatro-estrelas:after {
+    content: " ★★★★✰";    
+}
+
+.cinco-estrelas:after {
+    content: " ★★★★★";    
+}
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 300ms;
+}
+  
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+  
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+  
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+  
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media screen and (max-width: 480px) {
+    .box, .principal, .conteudo-listas, .listas, .titulo-principal {
+        width: auto;
+    }
+
+    .box h1, .box h2 {
+        font-size: 24px;
+        margin: 0 10px 10px 10px ;
+    }
+
+    .box h2 {
+        margin: 0 10px 20px 10px;
+    }
+
+    nav {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        top: -10px;
+        margin-right: 16%;
+        line-height: 2em;
+        
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0 10px 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .titulo-principal {
+        margin: 0 0 5px 0;
+
+    }
+
+    .principal img {
+        width: 200px;
+        text-align: center;
+        margin: 0 10px 10px 10px;
+        border-radius: 3%;
+    }
+
+    .principal p {
+        margin: 0 10px 20px 0;
+    }
+
+    #futuro {
+        margin: 0 10px 20px 10px;
+    }
+
+    .listas {
+        padding: 2em;
+    }
+
+    .conteudo-listas {
+        margin: 0 25px 0 0;
+    }
+
+    .formacoes-img {
+        margin: -30px -10px auto;
+        width: 80px;
+    }
+
+    .habilidades-img {
+        margin: -10px 10px auto;
+        width: 40px;
+    }
+}
